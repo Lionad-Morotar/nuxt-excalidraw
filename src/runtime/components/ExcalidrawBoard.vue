@@ -1,22 +1,45 @@
 <script setup lang="ts">
 import { onMounted, useTemplateRef } from 'vue'
 import React from 'react'
-import type { ExcalidrawProps } from '@excalidraw/excalidraw/types/types'
+import '@excalidraw/excalidraw/index.css'
 
-export interface Props extends ExcalidrawProps {}
+interface Props {
+  initialData?: any
+  viewModeEnabled?: boolean
+  theme?: string
+  UIOptions?: any
+}
 
 const props = defineProps<Props>()
 
 const excalidrawRef = useTemplateRef<HTMLDivElement>('excalidrawRoot')
 
 onMounted(async () => {
-  if (excalidrawRef.value) {
-    const { Excalidraw } = await import('@excalidraw/excalidraw')
-    const ReactDOM = await import('react-dom/client')
+  if (!excalidrawRef.value) return
 
-    const root = ReactDOM.createRoot(excalidrawRef.value)
-    root.render(React.createElement(Excalidraw, props as any))
+  const [{ Excalidraw }, ReactDOM] = await Promise.all([
+    import('@excalidraw/excalidraw'),
+    import('react-dom/client'),
+  ])
+
+  const reactProps: Record<string, any> = {
+    ...(props.viewModeEnabled !== undefined && { viewModeEnabled: props.viewModeEnabled }),
+    ...(props.theme !== undefined && { theme: props.theme }),
+    ...(props.UIOptions !== undefined && { UIOptions: props.UIOptions }),
   }
+
+  if (props.initialData) {
+    reactProps.initialData = {
+      ...props.initialData,
+      appState: {
+        ...props.initialData.appState,
+        zoom: { value: 1 },
+      },
+    }
+  }
+
+  const root = ReactDOM.createRoot(excalidrawRef.value)
+  root.render(React.createElement(Excalidraw, reactProps))
 })
 </script>
 
