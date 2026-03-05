@@ -1,5 +1,7 @@
 <h1 align="center">Nuxt Excalidraw</h1>
 
+特性：**兼容 Nuxt v4**
+
 <br/>
 
 <p align="center">

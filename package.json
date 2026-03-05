@@ -2,7 +2,7 @@
   "name": "nuxt-excalidraw",
   "type": "module",
   "version": "1.0.0-beta.7",
-  "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 3 application.",
+  "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 4 application.",
   "author": "Angelo Schuler Piletti <angelopiletti@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -12,18 +12,17 @@
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+      "import": "./dist/module.mjs"
     }
   },
-  "main": "./dist/module.cjs",
+  "main": "./dist/module.mjs",
   "types": "./dist/types.d.ts",
   "files": [
     "dist"
   ],
   "engines": {
-    "node": "^19.8.1",
-    "pnpm": "^8.10.5"
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
   },
   "scripts": {
     "prepack": "nuxt-module-build build",
@@ -37,30 +36,30 @@
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.17.0",
-    "@nuxt/kit": "^3.8.1",
-    "@vitejs/plugin-react": "^4.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@nuxt/kit": "^3.16.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.1.2",
+    "@antfu/eslint-config": "^3.0.0",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/module-builder": "^0.5.3",
-    "@nuxt/schema": "^3.8.1",
-    "@nuxt/test-utils": "^3.8.1",
+    "@nuxt/eslint-config": "^0.7.0",
+    "@nuxt/module-builder": "^0.8.0",
+    "@nuxt/schema": "^3.16.0",
+    "@nuxt/test-utils": "^3.17.0",
     "@release-it/conventional-changelog": "^8.0.1",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
     "changelogen": "^0.5.5",
-    "eslint": "^8.53.0",
-    "lint-staged": "^15.1.0",
-    "nuxt": "^3.8.1",
+    "eslint": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "nuxt": "^3.16.0 || ^4.3.1",
     "release-it": "^17.0.0",
-    "simple-git-hooks": "^2.9.0",
-    "vitest": "^0.33.0",
-    "vue": "^3.3.8"
+    "simple-git-hooks": "^2.11.0",
+    "vitest": "^3.0.0",
+    "vue": "^3.5.0"
   },
   "stackblitz": {
     "startCommand": "npm run stackblitz"
