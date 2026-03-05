@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.2] - 2025-03-05
+
+### Fixed
+
+- 修复 CSS 未正确加载的问题
+- 使用 ESM 版本 Excalidraw
+
 ## [2.0.0] - 2025-03-05
 
 ### Changed

@@ -1,7 +1,7 @@
 {
   "name": "@lionad/nuxt-excalidraw",
   "type": "module",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 4 application.",
   "author": "Lionad <tangnad@qq.com>",
   "license": "MIT",
