@@ -1,13 +1,13 @@
 {
-  "name": "nuxt-excalidraw",
+  "name": "@lionad/nuxt-excalidraw",
   "type": "module",
   "version": "1.0.0-beta.7",
   "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 4 application.",
-  "author": "Angelo Schuler Piletti <angelopiletti@gmail.com>",
+  "author": "Lionad <tangnad@qq.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AngeloSchulerPiletti/nuxt-excalidraw"
+    "url": "git+https://github.com/Lionad-Morotar/nuxt-excalidraw"
   },
   "exports": {
     ".": {

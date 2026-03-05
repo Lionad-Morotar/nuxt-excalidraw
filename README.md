@@ -1,18 +1,17 @@
-<h1 align="center">Nuxt Excalidraw</h1>
+<h1 align="center">@lionad/nuxt-excalidraw</h1>
+
+> This is a fork of [nuxt-excalidraw](https://github.com/AngeloSchulerPiletti/nuxt-excalidraw) by Angelo Schuler Piletti.
 
 特性：**兼容 Nuxt v4**
 
 <br/>
 
 <p align="center">
-  <a href="https://npmjs.com/package/nuxt-excalidraw">
-    <img alt="Nuxt Excalidraw is released under the MIT license." src="https://img.shields.io/npm/v/nuxt-excalidraw/latest.svg?style=flat&colorA=18181B&colorB=28CF8D"  />
+  <a href="https://npmjs.com/package/@lionad/nuxt-excalidraw">
+    <img alt="@lionad/nuxt-excalidraw is released under the MIT license." src="https://img.shields.io/npm/v/@lionad/nuxt-excalidraw/latest.svg?style=flat&colorA=18181B&colorB=28CF8D"  />
   </a>
-  <a href="https://npmjs.com/package/nuxt-excalidraw">
-    <img alt="Nuxt Excalidraw is released under the MIT license." src="https://img.shields.io/badge/license-MIT-blue.svg"  />
-  </a>
-  <a href="https://npmjs.com/package/nuxt-excalidraw">
-    <img alt="npm downloads/month" src="https://img.shields.io/npm/dm/nuxt-excalidraw.svg?style=flat&colorA=18181B&colorB=28CF8D"  />
+  <a href="https://npmjs.com/package/@lionad/nuxt-excalidraw">
+    <img alt="@lionad/nuxt-excalidraw is released under the MIT license." src="https://img.shields.io/badge/license-MIT-blue.svg"  />
   </a>
     <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"  />
 </p>
@@ -52,21 +51,21 @@ Add `nuxt-excalidraw` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D nuxt-excalidraw
+pnpm add -D @lionad/nuxt-excalidraw
 
 # Using yarn
-yarn add --dev nuxt-excalidraw
+yarn add --dev @lionad/nuxt-excalidraw
 
 # Using npm
-npm install --save-dev nuxt-excalidraw
+npm install --save-dev @lionad/nuxt-excalidraw
 ```
 
-Add `nuxt-excalidraw` to the `modules` section of `nuxt.config.ts`
+Add `@lionad/nuxt-excalidraw` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    'nuxt-excalidraw',
+    '@lionad/nuxt-excalidraw',
     // other modules
   ]
 })
